@@ -39,3 +39,14 @@ while n > 0:
     n //= 10
     
 print(f"Revered n = {n} is {rev_n}")
+
+# Prime check
+n = int(input("Enter a number: "))
+limit = int(pow(n, 0.5))
+
+for i in range(2, limit + 1):
+    if n%i == 0:
+        print("Not Prime!")
+        break
+else:
+    print("Prime!")
