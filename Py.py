@@ -29,3 +29,13 @@ for n in l:
         print("0 < n < 5")
     else:
         print("n < 0")
+
+# while loop
+n = int(input())
+rev_n = 0
+
+while n > 0:
+    rev_n = rev_n*10 + n%10
+    n //= 10
+    
+print(f"Revered n = {n} is {rev_n}")
