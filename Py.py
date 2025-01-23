@@ -1,10 +1,5 @@
-
-# Online Python - IDE, Editor, Compiler, Interpreter
-
-def sum(a, b):
-    return (a + b)
-
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
-
-print(f'Sum of {a} and {b} is {sum(a, b)}')
+# Input and Conditionals
+if int(input("Enter 1st number: ")) > 10 and int(input("Enter 2nd number: ")) > 10:
+    print('Both > 10')
+else:
+    print("Both < 10")
