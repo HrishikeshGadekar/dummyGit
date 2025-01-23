@@ -20,6 +20,8 @@ l = [67, 12, 8, 6, 3, 2, 0, -2, -23]
 for n in l:
     print(f"n = {n} :", end=' ')
     if n > 10:
+        if n%2 == 0:
+            print("Even", end=' ')
         print("n > 10")
     elif n >= 5:
         print("5 <= n <= 10")
