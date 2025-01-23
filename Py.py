@@ -21,9 +21,9 @@ for n in l:
     print(f"n = {n} :", end=' ')
     if n > 10:
         print("n > 10")
-    elif 5 <= n <= 10:
+    elif n >= 5:
         print("5 <= n <= 10")
-    elif 0 < n < 5:
+    elif n > 0:
         print("0 < n < 5")
     else:
         print("n < 0")
