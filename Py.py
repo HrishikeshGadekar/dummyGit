@@ -132,3 +132,21 @@ n = int(input())
 
 for i in range(1, n, 2):
     print(i, end=' ')
+
+
+# Isosceles Pattern
+
+n = int(input())
+
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(' ', end='')
+    
+    for j in range(i):
+        print(i+j, end='')
+    
+    for j in range(i-1):
+        print(2*(i-1)-j, end='')
+        
+    print()
+        
