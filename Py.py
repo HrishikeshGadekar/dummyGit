@@ -149,4 +149,22 @@ for i in range(1, n+1):
         print(2*(i-1)-j, end='')
         
     print()
+
+# Diamond Pattern for Odd Number
+n = int(input())
+
+for i in range(1, 2*n, 2):
+    s = abs(n-i)//2
+    if i <= n:
+        for j in range(s):
+            print(' ', end='')
         
+        for j in range(i):
+            print('*', end='')
+    else:
+        for j in range(s):
+            print(' ', end='')
+
+        for j in range(2*n-i):
+            print('*', end='')
+    print()
