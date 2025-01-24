@@ -59,3 +59,29 @@ for i in range(n):
         print('*', end=' ')
     print()
 
+# Square Patterns
+n = int(input())
+
+print('-------------------')
+for i in range(n):
+    for j in range(n):
+        print(i+1, end=' ')
+    print()
+ 
+print('-------------------')   
+for i in range(n):
+    for j in range(n):
+        print(j+1, end=' ')
+    print()
+ 
+print('-------------------')   
+for i in range(n):
+    for j in range(n):
+        print(n-i, end=' ')
+    print()
+    
+print('-------------------')   
+for i in range(n):
+    for j in range(n):
+        print(n-j, end=' ')
+    print()
