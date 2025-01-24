@@ -125,3 +125,10 @@ for i in range(1, n+1):
     for j in range(n):
         print(chr(A+i+j-1), end=' ')
     print()
+
+# For loops
+
+n = int(input())
+
+for i in range(1, n, 2):
+    print(i, end=' ')
