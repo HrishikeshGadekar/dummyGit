@@ -85,3 +85,26 @@ for i in range(n):
     for j in range(n):
         print(n-j, end=' ')
     print()
+
+# Triangle Patterns
+n = int(input())
+
+print('-------------------')
+for i in range(1, n+1):
+    for j in range(i):
+        print(j+1, end=' ')
+    print()
+ 
+print('-------------------')   
+for i in range(1, n+1):
+    for j in range(i):
+        print(i+j, end=' ')
+    print()
+ 
+print('-------------------')
+num = 1
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=' ')
+        num += 1
+    print()
