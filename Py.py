@@ -168,3 +168,15 @@ for i in range(1, 2*n, 2):
         for j in range(2*n-i):
             print('*', end='')
     print()
+
+# Functions
+n, r = int(input()), int(input())
+
+def fact(n):
+    if n == 0: return 1
+    return n*fact(n-1)
+    
+def nCr(n, r):
+    return fact(n)//(fact(r)*fact(n-r))
+
+print(nCr(n, r))
