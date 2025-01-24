@@ -108,3 +108,20 @@ for i in range(1, n+1):
         print(num, end=' ')
         num += 1
     print()
+
+# Character Patterns
+a = ord('a')
+A = ord('A')
+n = int(input())
+
+print('-------------------')
+for i in range(1, n+1):
+    for j in range(n):
+        print(chr(A+j), end=' ')
+    print()
+ 
+print('-------------------')   
+for i in range(1, n+1):
+    for j in range(n):
+        print(chr(A+i+j-1), end=' ')
+    print()
