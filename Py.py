@@ -180,3 +180,35 @@ def nCr(n, r):
     return fact(n)//(fact(r)*fact(n-r))
 
 print(nCr(n, r))
+
+# Binary search
+def find(search_list, value):
+    binary_search_result = binary_search(search_list, value, 0, len(search_list)-1)
+    print(f"===> Binary_search_result: {binary_search_result}")
+    return binary_search_result
+
+def binary_search(search_list, value, left, right):
+    
+    print(f"left: {left}")
+    print(f"right: {right}")
+    print(f"search_list[{left}:{right}]: {search_list[left:right]}")
+    
+    if left > right:
+        print("returning -1")
+        return -1
+        # raise ValueError("value not in array")
+
+    mid = (left+right)//2
+
+    print(f"mid: {mid}")
+    print(f"value == search_list[mid] => {value == search_list[mid]}")
+    
+    if value == search_list[mid]:
+        print(f"returning mid={mid}")
+        return mid
+    elif value < search_list[mid]:
+        return binary_search(search_list, value, left, mid-1)
+    else:
+        return binary_search(search_list, value, mid+1, right)
+
+print(find([1, 3, 4, 6, 8, 9, 11], 91))
