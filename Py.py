@@ -212,3 +212,19 @@ def binary_search(search_list, value, left, right):
         return binary_search(search_list, value, mid+1, right)
 
 print(find([1, 3, 4, 6, 8, 9, 11], 91))
+
+# Selection Sort
+
+def selection_sort(arr, n):
+    for i in range(n):
+        curr_min = i
+        for j in range(i, n):
+            if arr[j] < arr[curr_min]:
+                curr_min = j
+        arr[i], arr[curr_min] = arr[curr_min], arr[i]
+        
+        
+arr = [4, 6, 1, 3, 2]
+selection_sort(arr, len(arr))
+print(arr)
+            
